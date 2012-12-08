@@ -1,0 +1,154 @@
+body{
+	background: url(../img/Bankoboev.Ru_vintazhnyi_uzor.jpg) top left  #F2F1E9;
+	background-attachment: fixed;
+	margin: 10px 0;
+}
+div.logo {
+	height: 150px;
+}
+div.main {
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 10px #888;
+	padding: 10px;
+}
+ul.topmenu  a{
+	font-size: 12px;
+}
+
+div.element {
+	width: 195px;
+	margin-bottom: 20px;
+	border-radius: 1px;
+	border: solid 1px #F2F1E9;
+	box-shadow: 0px 1px 2px #888;
+	text-align: center;
+	padding: 10px;
+}
+	div.element img {
+		height: 180px;
+		margin-bottom: 10px;
+	}
+	div.element button {
+		margin-top: 10px;
+	}
+	
+div.footer {
+	background-color: #FFFFFF;
+	padding: 30px 10px 10px 10px;
+	height: 70px;
+}
+/* новье */
+.nav-element{
+    height: 30px;
+    font-size:13px;
+    font-weight: bold;
+}
+
+.nav-element-number{
+    border-radius: 100%;
+    width:20px;
+    padding:0px;
+    text-align: center;
+    height:20px;
+    border:1px dashed gray;
+    color:gray;
+    font-family: "Tahoma";
+}
+
+.nav-element-number_active{
+    color:white;
+    background-color: #fe3333;
+    border-color:#000000;
+}
+
+.nav-element-text > a{
+    color: #847b7b;
+    padding-left:5px;
+}
+
+.nav-element-text_active > a{
+    color:#fe3333;
+}
+
+.custom-header{
+    margin-left:-10px;
+    margin-right:-10px;
+    background-color: #E5E5E5;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    font-weight: bold;
+    height:50px;
+}
+
+.custom-header-right{
+    margin-left:-10px;
+    height:30px;
+    padding-top: 16px;
+}
+
+.custom-header-left{
+    border-right:1px dashed #666666;
+    margin-right:10px;
+    height:30px;
+    padding-top: 16px;
+    padding-left: 10px;
+}
+
+.custom-main-right{
+    margin-top: 20px;
+}
+
+.custom-main-left{
+    border-right:1px dashed #666666;
+    padding-top: 15px;
+}
+
+.bottom-dashed{
+    border-bottom:1px dashed #666666;
+}
+
+.item{
+    padding-top: 20px;
+}
+
+.item-solution{
+
+}
+
+.item-solution-img{
+    margin-left:0px;
+}
+
+.item-solution-content{
+    line-height: 26px;
+}
+
+.item-solution-content-name{
+    font-size: 26px;
+}
+
+.item-solution-content-desc{
+    font-size: 14px;
+}
+
+.item-solution-content-cost{
+    font-size: 26px;
+}
+
+.item-solution-content-options{
+    font-size: 14px;
+}
+
+.item-solution-remove{
+    text-align: right;
+    color: #999999;
+    font-size: 12px;
+}
+
+.item-solution-remove > a{
+    color: #999999;
+}
+
+.item-cost{
+    font-size:18px;
+}

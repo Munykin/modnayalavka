@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Модная Лавка</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".carousel").carousel();
+        $(".addcart").click(function(){
+            var id = $(this).attr("id");
+            $.post("/cart/",{ plugin:"cart", go:"add", id:id },function(data){
+                if(data == 1) {
+                    $(".addcart[id="+id+"]").text("Добавлено в корзину");
+                    var cart = parseInt($("#cart").text())+1;
+                    $("#cart").text(cart);
+                } else {
+                    alert('При добавлении возникла ошибка. Обратитесь к администратору.');
+                }
+            });
+            return false;
+        });
+    });
+</script>
+<div class="container main">
+    <div class="row logo">
+        <div class="span9"><a href="/"><img src="img/logo.png" alt="" /></a></div>
+        <div class="span3">
+            <a href="/cart/">Корзина (<span id="cart">5</span>)</a><br />
+            <a href="/profile/">Профиль</a><br />
+            <a href="/?exit">Выход</a><br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <ul class="nav topmenu">
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="/pletenaya_mebel/">Плетеная мебель</a></li>
+                            <li><a href="/kovanaya_mebel/">Кованая мебель</a></li>
+                            <li><a href="/mebel_iz_massiva/">Мебель из массива</a></li>
+                            <li><a href="/chasy/">Часы</a></li>
+                            <li><a href="/osveshcenie/">Освещение</a></li>
+                            <li><a href="/oboi/">Обои</a></li>
+                            <li><a href="/dostavka/">Доставка</a></li>
+                            <li><a href="/novosti/">Новости</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="active item"><img src="img/1.jpg" alt="" /></div>
+            <div class="item"><img src="img/2.jpg" alt="" /></div>
+            <div class="item"><img src="img/3.jpg" alt="" /></div>
+        </div>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+
+    <div class="row">
+        <div class="span3">
+            <ul class="nav nav-list">
+                <li class="nav-header">Каталог мебели</li>
+                <li><a href="/stoly/">Столы</a></li>
+                <li><a href="/stulya/">Стулья</a></li>
+                <li><a href="/bufety/">Буфеты</a></li>
+                <li><a href="/krovati/">Кровати</a></li>
+                <li><a href="/komody/">Комоды</a></li>
+                <li><a href="/skami/">Скамьи</a></li>
+                <li><a href="/kresla/">Кресла</a></li>
+                <li><a href="/shkafy/">Шкафы</a></li>
+                <li><a href="/stellazhi/">Стеллажи</a></li>
+                <li><a href="/tualetnye_stoly_tryumo/">Туалетные столы, трюмо</a></li>
+                <li><a href="/komplekty_mebeli/">Комплекты мебели</a></li>
+                <li><a href="/aksessuary_dlya_doma/">Аксессуары для дома</a></li>
+            </ul>
+        </div>
+        <div class="span9"><div class="row">
+            <div class="span3 element">
+                <img src="img/1/1.jpg" height="180"><br />
+                <a href="/catalog/1/1.html">Шкаф для белья 2 двери...</a><br />
+                <button class="btn btn-small addcart" type="button" id="1"><i class="icon-shopping-cart"></i>23880.00 рублей</button>
+            </div>
+            <div class="span3 element">
+                <img src="img/1/4.jpg" height="180"><br />
+                <a href="/catalog/1/4.html">Тумба 2 двери 4 ящика...</a><br />
+                <button class="btn btn-small addcart" type="button" id="4"><i class="icon-shopping-cart"></i>18465.00 рублей</button>
+            </div>
+            <div class="span3 element">
+                <img src="img/1/5.jpg" height="180"><br />
+                <a href="/catalog/1/5.html">Шкаф для белья 2 двери...</a><br />
+                <button class="btn btn-small addcart" type="button" id="5"><i class="icon-shopping-cart"></i>23880.00 рублей</button>
+            </div>
+            <div class="span3 element">
+                <img src="img/2/11.jpg" height="180"><br />
+                <a href="/catalog/2/11.html">Шкаф для белья 2 двери...</a><br />
+                <button class="btn btn-small addcart" type="button" id="11"><i class="icon-shopping-cart"></i>22766.00 рублей</button>
+            </div>
+            <div class="span3 element">
+                <img src="img/2/12.jpg" height="180"><br />
+                <a href="/catalog/2/12.html">Тумба 2 двери 4 ящика...</a><br />
+                <button class="btn btn-small addcart" type="button" id="12"><i class="icon-shopping-cart"></i>18465.00 рублей</button>
+            </div>
+            <div class="span3 element">
+                <img src="img/2/15.jpg" height="180"><br />
+                <a href="/catalog/2/15.html">Туалетный столик 3...</a><br />
+                <button class="btn btn-small addcart" type="button" id="15"><i class="icon-shopping-cart"></i>8145.00 рублей</button>
+            </div>
+            <div class="span3 element">
+                <img src="img/2/24.jpg" height="180"><br />
+                <a href="/catalog/2/24.html">Тумбочка прикроватная...</a><br />
+                <button class="btn btn-small addcart" type="button" id="24"><i class="icon-shopping-cart"></i>4425.00 рублей</button>
+            </div>
+            <div class="span3 element">
+                <img src="img/2/25.jpg" height="180"><br />
+                <a href="/catalog/2/25.html">Кровать "Корабль" 160...</a><br />
+                <button class="btn btn-small addcart" type="button" id="25"><i class="icon-shopping-cart"></i>14835.00 рублей</button>
+            </div>
+            <div class="span3 element">
+                <img src="img/2/33.jpg" height="180"><br />
+                <a href="/catalog/2/33.html">Стул с вырезанным...</a><br />
+                <button class="btn btn-small addcart" type="button" id="33"><i class="icon-shopping-cart"></i>2000.00 рублей</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="container footer">
+    <div class="row">
+        <div class="span12">
+            &copy; 2012 Модная Лавка <br />
+            625000, г. Тюмень, ул. Малыгина, д. 59 <br />
+            (3452) 53-23-45, 97-47-44
+        </div>  `
+    </div>
+</div>
+</body>
+</html>
