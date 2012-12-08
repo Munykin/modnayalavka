@@ -35,7 +35,8 @@ div.element {
 div.footer {
 	background-color: #FFFFFF;
 	padding: 30px 10px 10px 10px;
-	height: 70px;
+    margin-top: -60px;
+	/*height: 70px;*/
 }
 /* новье */
 .nav-element{
@@ -96,10 +97,22 @@ div.footer {
 
 .custom-main-right{
     margin-top: 20px;
+    position: relative;
+}
+
+.custom-main-right:after{
+    content: "";
+    display: block;
+    margin-left:-20px;
+    margin-top:-20px;
+    height:100%;
+    top:0px;
+    left:-1px;
+    border-left:1px dashed #666666;
+    position: absolute;
 }
 
 .custom-main-left{
-    border-right:1px dashed #666666;
     padding-top: 15px;
 }
 
@@ -151,4 +164,37 @@ div.footer {
 
 .item-cost{
     font-size:18px;
+}
+
+.total-cost{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.total-cost-value{
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:18px;
+}
+
+.custom-footer-color{
+    background-color: #b97a57;
+    margin-left: 10px;
+    padding-right: 20px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.custom-footer-color  a, .custom-footer-color  span{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.custom-footer-color-contacts{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.bottommenu .search-query{
+    margin-top: 5px;
 }
