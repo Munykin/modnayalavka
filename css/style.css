@@ -241,3 +241,29 @@ div.footer {
     height: 43px;
     z-index: -1;
 }
+
+.color-block-white{
+    height: 50px;
+    width: 50px;
+    background-color: #FFFFFF;
+    border:1px solid #D0D0D0;
+    border-radius: 3px;
+}
+
+.custom-brand-content{
+    margin-bottom: 45px;
+}
+
+.custom-brand-content-right{
+    font-size:17px;
+}
+
+.custom-brand-content-right-header{
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.custom-brand-content-articul{
+    color:#fe3333;
+}
