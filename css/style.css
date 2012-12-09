@@ -51,15 +51,20 @@ div.footer {
     padding:0px;
     text-align: center;
     height:20px;
-    border:1px dashed gray;
+    border:1px dashed #666666;
     color:gray;
     font-family: "Tahoma";
 }
 
 .nav-element-number_active{
-    color:white;
+    color:#FFFFFF;
     background-color: #fe3333;
     border-color:#000000;
+}
+
+.nav-element-number_passed{
+    color:#FFFFFF;
+    background-color: #666666;
 }
 
 .nav-element-text > a{

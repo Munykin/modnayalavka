@@ -81,7 +81,7 @@
         <div class="span3">
             <div class="row custom-main-left">
                     <div class="span3 nav-element">
-                        <div class="span1 nav-element-number">1</div>
+                        <div class="span1 nav-element-number  nav-element-number_passed">1</div>
                         <div class="span2 nav-element-text"><a href="#">Состав корзины</a></div>
                         <div class="row"></div>
                     </div>
@@ -107,12 +107,17 @@
                     </div>
 
                     <div class="span3 nav-element">
-                        <div class="span1 nav-element-number nav-element-number_active">2</div>
-                        <div class="span2 nav-element-text nav-element-text_active"><a href="#">Авторизация</a></div>
+                        <div class="span1 nav-element-number nav-element-number_passed">2</div>
+                        <div class="span2 nav-element-text"><a href="#">Авторизация</a></div>
                     </div>
+                    <div class="span3 basket-accepted-content">
+                        <div class="span2 basket-accepted-content-element">Паркетти Александр</div>
+                        <div class="span2 basket-accepted-content-element">maparketti@gmail.com</div>
+                    </div>
+
                     <div class="span3 nav-element">
-                        <div class="span1 nav-element-number">3</div>
-                        <div class="span2 nav-element-text"><a href="#">Доставка</a></div>
+                        <div class="span1 nav-element-number nav-element-number_active">3</div>
+                        <div class="span2 nav-element-text nav-element-text_active"><a href="#">Доставка</a></div>
                     </div>
                     <div class="span3 nav-element">
                         <div class="span1 nav-element-number">4</div>
@@ -123,72 +128,113 @@
         <div class="span9 custom-main-right">
             <div class="row">
                 <div class="span9">
-
+                    <div class="span6"><b>Выбеите способ доставки</b></div>
+                    <div class="span2"><b>Стоимость</b></div>
                 </div>
+            </div>
+
+            <div class="row">
+                <div class="span9">&nbsp;</div>
             </div>
 
             <div class="row">
                 <div class="span9">
                     <form>
-                        <label class="radio span9">
+                        <div class="span6">
                             <input type="radio" name="isregistrated" value="option1" checked>
-                            я - зарегистрированный покупатель
-                        </label>
-                        <div class="row">
-                            <div class="span9">&nbsp;</div>
+                            Доставка экспедитором по Тюмени
                         </div>
-                        <div class="controls">
-                            <div class="span3">Адресс электронной почты</div>
-                            <div class="span3"><input class="span3" type="text" placeholder="e-mail"></div>
-                        </div>
-                        <div class="controls">
-                            <div class="span3">Пароль</div>
-                            <div class="span3"><input type="password" class="span3" id="inputPassword" placeholder="Password"></div>
-                            <div class="span2 forget-password"><a href="#">Забыли пароль</a></div>
+                        <div class="span2">
+                            Бесплатно
                         </div>
 
                         <div class="row">
+                            <div class="span9">&nbsp;</div>
                             <div class="span9 bottom-dashed"></div>
+                            <div class="span9">&nbsp;</div>
                         </div>
 
-                        <label class="radio span9">
-                            <br>
-                            <input type="radio" name="isregistrated" value="option2">
-                            я - хочу зарегистрироваться
-                        </label>
+                        <div class="span6">
+                            <input type="radio" name="isregistrated" value="option1" checked>
+                            Доставка транспортной компанией по России
+                        </div>
+                        <div class="span2">
+                            По тарифам транспортной компании
+                        </div>
+
+                        <div class="span8">
+                            <div class="span9">&nbsp;</div>
+                            <small>Доставка осуществляется транспортной компанией "Экспресс Авто", "КИТ" или другой (по желанию клиента) после 100% предоплаты заказа.</small>
+                            <div class="span9">&nbsp;</div>
+                        </div>
+
+                        <div class="span9">
+                            <b>Укажите адрес доставки</b>
+                        </div>
                         <div class="row">
                             <div class="span9">&nbsp;</div>
                         </div>
-                        <div class="controls">
-                            <div class="span3">Адресс электронной почты</div>
-                            <div class="span3"><input class="span3" type="text" placeholder="e-mail"></div>
-                            <div class="span5 offset3"><small>Адрес вашей электронной почты будет логином для авторизации в нашем интернет-магазине. На него же будут приходить уведомления об изменении состояний заказов</small></div>
-                        </div>
-                        <div class="controls">
-                            <div class="span3">Пароль</div>
-                            <div class="span3"><input type="password" class="span3" placeholder="Пароль"></div>
-                        </div>
-                        <div class="controls">
-                            <div class="span3">Повтор пароля</div>
-                            <div class="span3"><input type="password" class="span3" placeholder="Повтор пароля"></div>
-                        </div>
-                        <div class="controls">
-                            <div class="span3">Фамилия</div>
-                            <div class="span3"><input class="span3" type="text" placeholder="Фамилия"></div>
-                        </div>
-                        <div class="controls">
-                            <div class="span3">Имя</div>
-                            <div class="span3"><input class="span3" type="text" placeholder="Имя"></div>
-                        </div>
-                        <div class="controls">
-                            <div class="span3">Имя</div>
+                        <div class="controls span9">
+                            <div class="span1"><b>Куда:</b></div>
+                            <div class="span2">Регион</div>
                             <div class="span3">
-                                <select class="span3" type="text" placeholder="Имя">
-                                    <option>Женский</option>
-                                    <option>Мужской</option>
-                                    <option>Не традиционный</option>
+                                <select class="span3" type="text">
+                                    <option>Тюменска область</option>
+                                    <option>Московская область</option>
+                                    <option>Омская область</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="controls span9">
+                            <div class="span2 offset1">Населенный пункт</div>
+                            <div class="span3"><input class="span3" type="text" placeholder="Населенный пункт"></div>
+                        </div>
+                        <div class="controls span9">
+                            <div class="span2 offset1">Улица</div>
+                            <div class="span3"><input class="span3" type="text" placeholder="Улица"></div>
+                        </div>
+                        <div class="controls span9">
+                            <div class="span2 offset1">Дом</div>
+                            <div class="span3"><input class="span3" type="text" placeholder="Дом"></div>
+                        </div>
+                        <div class="controls span9">
+                            <div class="span2 offset1">Корпус</div>
+                            <div class="span3"><input class="span3" type="text" placeholder="Корпус"></div>
+                        </div>
+                        <div class="controls span9">
+                            <div class="span2 offset1">Строение</div>
+                            <div class="span3"><input class="span3" type="text" placeholder="Строение"></div>
+                        </div>
+                        <div class="controls span9">
+                            <div class="span2 offset1">Квартира</div>
+                            <div class="span3"><input class="span3" type="text" placeholder="Квартира"></div>
+                        </div>
+                        <div class="controls span9">
+                            <div class="span2 offset1">Индекс</div>
+                            <div class="span3"><input class="span3" type="text" placeholder="Индекс"></div>
+                        </div>
+                        <div class="controls span9">
+                            <div class="span1"><b>Кому:</b></div>
+                            <div class="span2">Фамилия</div>
+                            <div class="span3"><input class="span3" type="text" placeholder="Фамилия"></div>
+                        </div>
+                        <div class="controls span9">
+                            <div class="span2 offset1">Имя</div>
+                            <div class="span3"><input class="span3" type="text" placeholder="Имя"></div>
+                        </div>
+                        <div class="controls span9">
+                            <div class="span2 offset1">Отчество</div>
+                            <div class="span3"><input class="span3" type="text" placeholder="Отчество"></div>
+                        </div>
+                        <div class="controls span9">
+                            <div class="span2 offset1">Телефон</div>
+                            <div class="span3"><input class="span3" type="text" placeholder="Телефон"></div>
+                        </div>
+                        <div class="controls span9">
+                            <div class="span3 offset3"><small>Домашний или мобильный телефон в формате +7xxxxxxxxx</small></div>
+                        </div>
+                        <div class="span9">
+                                <small><input type="checkbox" value="">Я согласен с <a href="">правилами сайта</a></small>
                         </div>
                     </form>
                 </div>
