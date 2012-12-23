@@ -1,7 +1,6 @@
 body{
 	background: url(../img/Bankoboev.Ru_vintazhnyi_uzor.jpg) top left  #F2F1E9;
 	background-attachment: fixed;
-	margin: 10px 0;
 }
 div.logo {
 	height: 150px;
@@ -197,4 +196,60 @@ div.footer {
 
 .bottommenu .search-query{
     margin-top: 5px;
+}
+
+.dig_footer{
+    background-color: #bcbcbc;
+    text-transform: uppercase;
+    margin-left:10px;
+    margin-right: -10px;
+    color:black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.dig_footer a{
+    color:black;
+    font-weight: bold;
+}
+
+.dig_footer input{
+    border-radius: 0px;
+    border:1px solid black;
+    height: 15px;
+    width: 150px;
+    margin-left: 10px;
+    float: left;
+    margin-top:-2px;
+}
+.dig_footer__item{
+    float:left;
+    width: 174px;
+}
+
+.dig_footer__item_cock{
+    float:left;
+    width: 260px;
+}
+
+.dig_footer__item_right{
+    border-right: 1px solid black;
+}
+
+.dig_footer__item_ass{
+    background: #fafafa; /* Old browsers */
+    background: -moz-linear-gradient(top, #fafafa 0%, #bbbbbc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#bbbbbc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fafafa 0%,#bbbbbc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fafafa 0%,#bbbbbc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fafafa 0%,#bbbbbc 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #fafafa 0%,#bbbbbc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#bbbbbc',GradientType=0 ); /* IE6-9 */
+    width: 70px !important;
+    height: 25px !important;
+    color:#1a6bfd;
+    border:1px solid #c7c4c2;
+    -webkit-box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    1px 1px 1px rgba(50, 50, 50, 0.25);
+    box-shadow:         1px 1px 1px rgba(50, 50, 50, 0.25);
 }
