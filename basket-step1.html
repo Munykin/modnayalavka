@@ -12,7 +12,7 @@
 <div class="container">
 <script type="text/javascript">
     $(document).ready(function(){
-        $(".carousel").carousel();
+        //$(".carousel").carousel();
         $(".addcart").click(function(){
             var id = $(this).attr("id");
             $.post("/cart/",{ plugin:"cart", go:"add", id:id },function(data){
@@ -37,7 +37,7 @@
             <a href="/?exit">Выход</a><br />
         </div>
     </div>
-    <div class="row">
+    <!--<div class="row">
         <div class="dig_footer">
             <div class="dig_footer__item dig_footer__item_right"><a href="/">мебель</a></div>
             <div class="dig_footer__item dig_footer__item_right"><a href="/">кухня</a></div>
@@ -56,7 +56,7 @@
         </div>
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div>
+    </div>-->
 
     <div class="row custom-header">
         <div class="span3">
@@ -90,9 +90,9 @@
         </div>
         <div class="span9 custom-main-right">
             <div class="row">
-                <div class="span6">Товар</div>
-                <div class="span1">Кол-во</div>
-                <div class="span2">Стоимость</div>
+                <div class="span6"><b>Товар</b></div>
+                <div class="span1"><b>Кол-во</b></div>
+                <div class="span2"><b>Стоимость</b></div>
                 <div class="span9 bottom-dashed"></div>
             </div>
 

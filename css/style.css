@@ -1,6 +1,7 @@
 body{
 	background: url(../img/Bankoboev.Ru_vintazhnyi_uzor.jpg) top left  #F2F1E9;
 	background-attachment: fixed;
+    font-family: "Tahoma",Arial,Verdana,Helvetica,Sans-serif;
 }
 div.logo {
 	height: 150px;
@@ -136,7 +137,7 @@ div.footer {
 }
 
 .item-solution-content-name{
-    font-size: 26px;
+    font-size: 12pt;
 }
 
 .item-solution-content-desc{
@@ -144,7 +145,7 @@ div.footer {
 }
 
 .item-solution-content-cost{
-    font-size: 26px;
+    font-size: 16px;
 }
 
 .item-solution-content-options{
@@ -162,7 +163,7 @@ div.footer {
 }
 
 .item-cost{
-    font-size:18px;
+    font-size:16px;
 }
 
 .total-cost{
